@@ -4,8 +4,8 @@
         <!-- Logo Header -->
         <div class="logo-header" data-background-color="dark">
             <a href="#" class="logo">
-                <img src="{{ asset('assets/img/examples/kapal.png') }}" alt="kapal logo" class="navbar-brand mt-4"
-                    width="210" />
+                <img src="{{ URL::asset('assets/img/examples/smk(1).png') }}" alt="smk(1)" class="navbar-brand mt-4"
+                    width="195" />
             </a>
             <div class="nav-toggle">
                 <button class="btn btn-toggle toggle-sidebar">
@@ -34,19 +34,19 @@
                     <li class="nav-item">
                         <a href="">
                             <i class="fas fa-wallet"></i>
-                            <p>Rekening Pembayaran</p>
+                            <p>Siswa</p>
                         </a>
                     </li>
                     <li class="nav-item {{ request()->is() ? 'active' : '' }}">
                         <a href="">
                             <i class="fas fa-exclamation"></i>
-                            <p>Kategori Retribusi</p>
+                            <p>Assessor</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="">
                             <i class="fa fa-users" aria-hidden="true"></i>
-                            <p>Wajib Retribusi</p>
+                            <p>Detail</p>
                         </a>
                     </li>
                     <li class="nav-item">
