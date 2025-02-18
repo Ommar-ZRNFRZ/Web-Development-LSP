@@ -29,7 +29,7 @@
                 <div class="col-md-6 col-lg-5">
                     <div class="login-wrap p-4 p-md-5">
                         <div class="icon d-flex align-items-center justify-content-center">
-                            <img src="StyleLogin/images/lsp.jpg" width="95" height="95" class=""></img>
+                            <img src="StyleLogin/images/lsp.jpg" width="140" height="110" class=""></img>
                         </div>
                         <h3 class="text-center mb-4">LSP SMKN 1 KOTA CIREBON</h3>
                         <form action="{{ route('auth.login') }}" method="post">
