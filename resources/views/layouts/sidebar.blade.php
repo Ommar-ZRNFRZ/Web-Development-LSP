@@ -38,21 +38,21 @@
                         </a>
                     </li>
                     <li class="nav-item {{ request()->is() ? 'active' : '' }}">
-                        <a href="">
-                            <i class="fas fa-exclamation"></i>
+                        <a href="/assesor">
+                            <i class="fas fa-user"></i>
                             <p>Assessor</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="">
-                            <i class="fa fa-users" aria-hidden="true"></i>
-                            <p>Detail</p>
+                        <a href="/skema">
+                            <i class="fas fa-star"></i> 
+                            <p>Skema</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="">
-                            <i class="fas fa-ship"></i> 
-                            <p>Kapal Wajib Retribusi</p>
+                            <i class="fa fa-ship" aria-hidden="true"></i>
+                            <p>Detail</p>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -63,7 +63,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="">
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-exclamation"></i>
                             <p>Laporan</p>
                         </a>
                     </li>
