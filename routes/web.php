@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AssesorController;
 use App\Http\Controllers\SkemaController;
+use App\Http\Controllers\SiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,3 +40,11 @@ Route::delete('/skema/{id}', [SkemaController::class, 'destroy'])->name('skema.d
 Route::get('/skema/create', [SkemaController::class, 'create'])->name('skema.create');
 Route::post('/skema/store', [SkemaController::class, 'store'])->name('skema.store');
 Route::put('/skema/{id}', [SkemaController::class, 'update'])->name('skema.update');
+Route::get('/siswa', [SiswaController::class, 'index'])->name('siswa.index');
+Route::get('/siswa/{id}/edit', [SiswaController::class, 'edit'])->name('siswa.edit');
+Route::delete('/siswa/{id}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
+Route::get('/siswa/create', [SiswaController::class, 'create'])->name('siswa.create');
+Route::post('/siswa/store', [SiswaController::class, 'store'])->name('siswa.store');
+Route::put('/siswa/{id}', [SiswaController::class, 'update'])->name('siswa.update');
+
+

@@ -32,7 +32,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="">
+                        <a href="{{ route('siswa.index') }}">
                             <i class="fas fa-wallet"></i>
                             <p>Siswa</p>
                         </a>
@@ -46,70 +46,21 @@
                     <li class="nav-item">
                         <a href="/skema">
                             <i class="fas fa-star"></i> 
+                        <a href="">
+                            <i class="fa fa-users" aria-hidden="true"></i>
                             <p>Skema</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="">
-                            <i class="fa fa-ship" aria-hidden="true"></i>
-                            <p>Detail</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">
-                            <i class="fa fa-address-card" aria-hidden="true"></i>
-                            <p>Pembayaran Retribusi</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">
-                            <i class="fas fa-exclamation"></i>
-                            <p>Laporan</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ route('logout') }}">
-                            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-                            <p>Logout</p>
-                        </a>
-                    </li>
-                @endif
-
-                @if (auth()->user()->level == 'wajib')
-                    <li class="nav-item">
-                        <a href="{{ route('dashboard') }}">
-                            <i class="fas fa-user"></i>
-                            <p>Profil</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">
-                            <i class="fas fa-exclamation"></i>
-                            <p>Kategori Retribusi</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">
-                            <i class="fa fa-users" ></i>
-                            <p>Kapalku</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">
                             <i class="fas fa-ship"></i> 
-                            <p>Kapal Wajib Retribusi</p>
+                            <p>Jadwal</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="">
                             <i class="fa fa-address-card" aria-hidden="true"></i>
-                            <p>Konfirmasi Pembayaran</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">
-                            <i class="fas fa-star"></i>
-                            <p>Laporan</p>
+                            <p>User</p>
                         </a>
                     </li>
                     <li class="nav-item">
