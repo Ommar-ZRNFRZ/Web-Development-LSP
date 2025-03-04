@@ -18,10 +18,10 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Id_Assesor</th>
+                        <th>Id Assesor</th>
                         <th>Nama</th>
-                        <th>Reg_met</th>
-                        <th>Lama_mengajar</th>
+                        <th>Reg met</th>
+                        <th>Lama mengajar</th>
                         <th width="15%">Aksi</th>
                     </tr>
                 </thead>

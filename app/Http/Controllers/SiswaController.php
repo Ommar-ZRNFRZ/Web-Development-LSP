@@ -21,10 +21,17 @@ class SiswaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nis' => 'required|unique:siswa',
+            'nis' => 'required|unique:siswa.nis|size:8',
             'name' => 'required',
             'major' => 'required',
             'class' => 'required',
+        ], [
+            'nis.required' => 'NIS harus diisi!',
+            'nis.unique' => 'NIS sudah ada!',
+            'nis.size' => 'NIS harus tepat 8 karakter!',
+            'name.required' => 'Nama harus diisi!',
+            'major.required' => 'Jurusan harus diisi!',
+            'class.required' => 'Kelas harus diisi!',
         ]);
 
         Siswa::create($request->all());
@@ -43,11 +50,18 @@ class SiswaController extends Controller
         $student = Siswa::find($id);
 
         $request->validate([
-            'id' => 'required|unique:siswa,nis,' . $student->id,
-            'nis' => 'required',
-            'name' => 'required',
-            'major' => 'required',
-            'class' => 'required',
+            'id' => 'required|unique:siswa,nis' . $student->id,
+                'nis' => 'required|unique:siswa|size:8',
+                'name' => 'required',
+                'major' => 'required',
+                'class' => 'required',
+            ], [
+                'nis.required' => 'NIS harus diisi!',
+                'nis.unique' => 'NIS sudah ada!',
+                'nis.size' => 'NIS harus tepat 8 karakter!',
+                'name.required' => 'Nama harus diisi!',
+                'major.required' => 'Jurusan harus diisi!',
+                'class.required' => 'Kelas harus diisi!',
         ]);
 
         $student->nis = $request->nis;

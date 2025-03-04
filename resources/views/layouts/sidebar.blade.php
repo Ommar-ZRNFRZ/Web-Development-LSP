@@ -44,8 +44,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/skema">
-                            <i class="fas fa-star"></i> 
                         <a href="">
                             <i class="fa fa-users" aria-hidden="true"></i>
                             <p>Skema</p>
@@ -55,12 +53,6 @@
                         <a href="">
                             <i class="fas fa-ship"></i> 
                             <p>Jadwal</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="">
-                            <i class="fa fa-address-card" aria-hidden="true"></i>
-                            <p>User</p>
                         </a>
                     </li>
                     <li class="nav-item">

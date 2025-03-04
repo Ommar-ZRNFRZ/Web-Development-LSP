@@ -6,7 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AssesorController;
 use App\Http\Controllers\SkemaController;
 use App\Http\Controllers\SiswaController;
-
+use App\Http\Controllers\LandingPageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +18,10 @@ use App\Http\Controllers\SiswaController;
 |
 */
 
-Route::get('/', function () {
-    return redirect('login');
-});
+//Route::get('/', function () {
+//    return redirect('login');
+//});
+Route::get('/', [LandingPageController::class, 'index'])->name('index');
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 route::post('/login', [LoginController::class, 'login'])->name('auth.login');
 route::get('/logout', [LoginController::class, 'logout'])->name('logout');

@@ -10,10 +10,16 @@
                 <div class="mb-3">
                     <label class="form-label">NIS</label>
                     <input type="text" name="nis" class="form-control" required>
+                    @error('nis')
+                         <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Nama</label>
                     <input type="text" name="name" class="form-control" required>
+                    @error('name')
+                         <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Jurusan</label>
@@ -22,12 +28,18 @@
                         <option value="TKJ">Teknik Komputer dan Jaringan</option>
                         <option value="RPL">Rekayasa Perangkat Lunak</option>
                     </select>
+                    @error('major')
+                         <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Kelas</label>
                     <select name="class" id="class" class="form-control" required>
                         <option value="" disabled selected>--Pilih Kelas--</option>
                     </select>
+                    @error('class')
+                         <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
                 </div>
                 <button type="submit" class="btn btn-primary">Simpan</button>
                 <a href="{{ route('siswa.index') }}" class="btn btn-secondary">Batal</a>
