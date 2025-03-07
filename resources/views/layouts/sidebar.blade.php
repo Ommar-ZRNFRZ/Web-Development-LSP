@@ -44,15 +44,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/skema">
-                            <i class="fas fa-star"></i> 
                         <a href="">
+                            <i class="fas fa-star"></i> 
+                        <a href="/skema">
                             <i class="fa fa-users" aria-hidden="true"></i>
                             <p>Skema</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="">
+                        <a href="/jadwal">
                             <i class="fas fa-ship"></i> 
                             <p>Jadwal</p>
                         </a>
