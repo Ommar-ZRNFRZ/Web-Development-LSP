@@ -23,7 +23,7 @@ class SiswaController extends Controller
         $request->validate([
             'nis' => 'required|unique:siswa,nis|size:8',
             'name' => 'required',
-            'major' => 'required',
+            'Major' => 'required',
             'class' => 'required',
         ], [
             'nis.required' => 'NIS harus diisi!',

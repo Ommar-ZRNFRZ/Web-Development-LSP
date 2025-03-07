@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="">
+                        <a href="/jadwal">
                             <i class="fas fa-ship"></i> 
                             <p>Jadwal</p>
                         </a>
