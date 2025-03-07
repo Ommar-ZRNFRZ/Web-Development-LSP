@@ -9,7 +9,8 @@ class Siswa extends Model
 {
     use HasFactory;
 
-    protected $table = 'siswa'; // Nama tabel di database
+    protected $table = 'siswa'; // Pastikan sesuai dengan nama tabel di database
+    protected $primaryKey = 'id'; // Pastikan ini sesuai dengan primary key tabel
 
     protected $fillable = [
         'nis',
@@ -17,4 +18,6 @@ class Siswa extends Model
         'class',
         'major'
     ];
+
+    public $timestamps = false; // Matikan timestamps jika tabel tidak memiliki created_at dan updated_at
 }

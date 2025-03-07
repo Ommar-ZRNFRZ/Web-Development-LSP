@@ -28,7 +28,7 @@
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <img src="landing-page/img/logo.png" alt="">
-                <h1 class="sitename">Sistem Akademik</h1>
+                <h1 class="sitename">SMKN 1 CIREBON</h1>
             </a>
             <a class="btn-getstarted" href="{{ route('login') }}">Login</a>
         </div>
@@ -38,10 +38,7 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section">
             <div class="container text-center">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <h1 data-aos="fade-up">Selamat Datang di <br><span>Sistem Akademik</span></h1>
-                    <p data-aos="fade-up" data-aos-delay="100">PPLG SMKN 1 Cirebon</p>
-                </div>
+                
             </div>
         </section>
 
@@ -49,38 +46,19 @@
         <section class="services section">
             <div class="container">
                 <div class="row g-5">
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item item-cyan position-relative">
-                            <i class="bi bi-person-lines-fill icon"></i>
-                            <div>
-                                <h3>Form Absensi</h3>
-                                <p>Form pencatatan absensi masuk dan pulang</p>
-                                <a href="#" class="read-more stretched-link">Lakukan Absensi <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-item item-orange position-relative">
+                    <div class="col-lg-4 mx-auto" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item item-orange position-relative text-center">
                             <i class="bi bi-file-earmark-text icon"></i>
                             <div>
-                                <h3>Pengajuan Izin</h3>
-                                <p>Form pengajuan izin keluar sementara atau pulang</p>
-                                <a href="#" class="read-more stretched-link">Lakukan Pengajuan <i class="bi bi-arrow-right"></i></a>
+                                <h3>Login Siswa</h3>
+                                <p>Login siswa untuk melihat jadwal ujikom</p>
+                                <a href="#" class="read-more stretched-link">Login <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
+                    
 
-                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-item item-orange position-relative">
-                            <i class="bi bi-clipboard-check icon"></i>
-                            <div>
-                                <h3>Cek Status Izin</h3>
-                                <p>Form untuk mengecek status pengajuan izin</p>
-                                <a href="#" class="read-more stretched-link">Cek Status Pengajuan <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

@@ -44,7 +44,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="">
+                        <a href="/skema">
                             <i class="fa fa-users" aria-hidden="true"></i>
                             <p>Skema</p>
                         </a>
