@@ -53,7 +53,7 @@
                             <div>
                                 <h3>Login Siswa</h3>
                                 <p>Login siswa untuk melihat jadwal ujikom</p>
-                                <a href="#" class="read-more stretched-link">Login <i class="bi bi-arrow-right"></i></a>
+                                <a href="{{ route('permit-requests.index') }}" class="read-more stretched-link">Login <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>

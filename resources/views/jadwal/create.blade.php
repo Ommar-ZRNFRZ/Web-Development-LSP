@@ -9,7 +9,11 @@
                 @csrf
                 <div class="mb-3">
                     <label class="form-label">NIS</label>
-                    <input type="text" name="nis" class="form-control" required>
+                    <select name="id_siswa" class="form-control">
+                    @foreach ($siswa as $item)
+                        <option value="{{$item->id}}">{{ $item->nis }}</option>
+                    @endforeach
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Id_Assesor</label>

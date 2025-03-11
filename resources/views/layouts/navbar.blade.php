@@ -53,7 +53,7 @@
                             <img src="assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle" />
                         </div>
                         <span class="profile-username">
-                            <span class="op-7">Welcomeback {{auth()->user()->name}}</span>
+                            <span class="op-7">Welcomeback  @auth {{ auth()->user()->name }} @endauth</span>
                         </span>
                     </a>
                     <ul class="dropdown-menu dropdown-user animated fadeIn">

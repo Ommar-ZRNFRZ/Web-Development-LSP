@@ -23,7 +23,7 @@ class SiswaController extends Controller
         $request->validate([
             'nis' => 'required|unique:siswa,nis|size:8',
             'name' => 'required',
-            'Major' => 'required',
+            'major' => 'required',
             'class' => 'required',
         ], [
             'nis.required' => 'NIS harus diisi!',
@@ -34,7 +34,12 @@ class SiswaController extends Controller
             'class.required' => 'Kelas harus diisi!',
         ]);
 
-        Siswa::create($request->all());
+        Siswa::create([
+            'nis' => $request->nis,
+            'name' => $request->name,
+            'class' => $request->class,
+            'major' => $request->major
+        ]);
 
         return redirect()->route('siswa.index')->with('success', 'Siswa berhasil ditambahkan.');
     }

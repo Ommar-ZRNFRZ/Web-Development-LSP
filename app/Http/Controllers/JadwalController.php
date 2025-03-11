@@ -3,32 +3,48 @@
 namespace App\Http\Controllers;
 
 use App\Models\Jadwal;
+use App\Models\Siswa;
 use Illuminate\Http\Request;
 
 class JadwalController extends Controller
 {
     public function index()
     {
-        $jadwals = Jadwal::all();
-        return view('jadwal.index',compact('jadwal'));
+        $jadwals = Jadwal::select(
+            'jadwal.*',
+            'siswa.nis'
+        )
+        ->join('siswa', 'siswa.id', '=', 'jadwal.id_siswa')
+        ->get();
+        
+        return view('jadwal.index',compact('jadwals'));
     }
 
     public function create()
     {
-        return view('jadwal.create');
+        $siswa = Siswa::all();
+
+        return view('jadwal.create', compact('siswa'));
     }
 
     public function store(Request $request)
     {
         $request->validate([
-            'nis' => 'required',
-            'id_assessor' => 'required',
+            'id_siswa' => 'required',
+            'Id_assessor' => 'required',
             'id_skema' => 'required',
             'tanggal' => 'required',
             'tempat' => 'required',
         ]);
 
-        Jadwal::create($request->all());
+
+        Jadwal::create([
+            'id_siswa' => $request->id_siswa,
+            'id_assesor' => $request->Id_assessor,
+            'id_skema' => $request->id_skema,
+            'tanggal' => $request->tanggal,
+            'tempat' => $request->tempat,
+        ]);
 
         return redirect()->route('jadwal.index')->with('success', 'jadwal berhasil ditambahkan.');
     }

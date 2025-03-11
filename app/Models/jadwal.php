@@ -9,11 +9,11 @@ class Jadwal extends Model
 {
     use HasFactory;
 
-    protected $table = 'siswa'; // Nama tabel di database
+    protected $table = 'jadwal'; // Nama tabel di database
 
     protected $fillable = [
-        'nis',
-        'id_assessor',
+        'id_siswa',
+        'id_assesor',
         'id_skema',
         'tanggal',
         'tempat'

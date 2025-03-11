@@ -4,7 +4,7 @@
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="">
-                        Dinas Komunikasi Informatika Dan Statistik
+                        SMKN 1 KOTA CIREBON
                     </a>
                 </li>
                 <li class="nav-item">
@@ -14,11 +14,11 @@
         </nav>
         <div class="copyright">
             2025, made with <i class="fa fa-heart heart text-danger"></i> by
-            <a href="http://www.themekita.com">RPL</a>
+            <a href="http://www.themekita.com">RPL 1</a>
         </div>
         <div>
             Distributed by
-            <a target="_blank" href="https://themewagon.com/">ThemeWagon</a>.
+            <a target="_blank" href="https://themewagon.com/">RPL 1</a>.
         </div>
     </div>
 </footer>

@@ -19,7 +19,7 @@
                     <tr>
                         <th>No</th>
                         <th>NIS</th>
-                        <th>Id_jadwal</th>
+                        <th>Id_Assesor</th>
                         <th>Id_Skema</th>
                         <th>Tanggal</th>
                         <th>Tempat</th>
@@ -31,7 +31,7 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $jadwal->nis }}</td>
-                            <td>{{ $jadwal->id_jadwal }}</td>
+                            <td>{{ $jadwal->id_assesor }}</td>
                             <td>{{ $jadwal->id_skema }}</td>
                             <td>{{ $jadwal->tanggal }}</td>
                             <td>{{ $jadwal->tempat }}</td>

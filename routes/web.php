@@ -8,6 +8,8 @@ use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\SkemaController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\PermitRequestController;
+use App\Http\Controllers\PermitCheckController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -61,3 +63,12 @@ Route::delete('/jadwal/{id}', [JadwalController::class, 'destroy'])->name('jadwa
 Route::get('/jadwal/create', [JadwalController::class, 'create'])->name('jadwal.create');
 Route::post('/jadwal/store', [JadwalController::class, 'store'])->name('jadwal.store');
 Route::put('/jadwal/{id}', [JadwalController::class, 'update'])->name('jadwal.update');
+
+//Route::get('/permit-requests/form', [PermitRequestController::class, 'index'])->name('permit-requests.index');
+//Route::post('/permit-requests/form', [PermitRequestController::class, 'store'])->name('permit-requests.store');
+// Route::get('/permit-requests/form/{identity_number}', [PermitRequestController::class, 'showPermitForm'])->name('permit-requests.form');
+// Route::post('/permit-requests/store', [PermitRequestController::class, 'storePermitRequest'])->name('permit-requests.storePermit');
+
+ Route::get('/permit-requests/check', [PermitCheckController::class, 'index'])->name('permit-requests.index');
+ Route::post('/permit-requests/check', [PermitCheckController::class, 'store'])->name('permit-requests.check-store');
+ Route::get('/permit-requests/check/{nis}', [PermitCheckController::class, 'checkPermitRequest'])->name('permit-requests.check');

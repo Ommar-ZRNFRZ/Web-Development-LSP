@@ -24,6 +24,7 @@
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
             <ul class="nav nav-secondary">
+                @auth
                 @if (auth()->user()->level === 'admin')
                     <li class="nav-item {{ request()->is('dashboard*') ? 'active' : '' }}">
                         <a href="{{ route('dashboard') }}">
@@ -62,6 +63,7 @@
                         </a>
                     </li>
                 @endif
+                @endauth
             </ul>
         </div>
     </div>

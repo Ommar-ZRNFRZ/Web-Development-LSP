@@ -20,7 +20,7 @@ class AssesorController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'id_assesor' => 'required|unique:assesor.id_assesor',
+            'id_assesor' => 'required|unique:assesor,id_assesor',
             'name' => 'required',
             'reg_met' => 'required',
             'lama_mengajar' => 'required',
